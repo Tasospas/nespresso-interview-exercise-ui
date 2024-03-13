@@ -1,59 +1,51 @@
-<!--
-    Note: This markup MUST NOT BE EDITED.
-    You can only add or edit the CSS or JS files.
--->
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-
-        <title><%= htmlWebpackPlugin.options.title %></title>
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-    </head>
-
-    <body>
-        <div class="wrapper">
-            <div class="capsule-information">
-                <div>
-                    <h1>Master origins</h1>
-                    <h2>Brazil</h2>
-                    <p>Brazil is our smooth talker. It starts with mild Brazilian arabicas from the arid Savannahs of the Cerrado region. They give this origin coffee its characteristic toasted sweet cereal note.</p>
-                </div>
-                <div>
-                    <a href="#" class="capsule" id="fetch-json">
-                        <img src="https://www.nespresso.com/shared_res/agility/b2b/b2b/pureOrigins/img/capsules/brazil_S.png"/>
-                    </a>
-                </div>
-
-                <div class="coffee-specs" style="display: none;">
-                    <ul>
-                        <li>
-                            <span>
-                                <h3>Coffee <span>Specs</span></h3>
-                            </span>
-                            <ul>
-                                <li>Sweet cereal</li>
-                                <li>Espresso</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div id="fetched-data"></div>
-                </div>
-
-                <div class="overlay"></div>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Master Origins Coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+<body>
+<div class="wrapper main-wrapper">
+    <div class="capsule-information">
+        <div class="intro-image-container">
+            <div class="intro-text">
+                <h1>Master origins</h1>
+                <h2>Brazil</h2>
+                <p class="desc-text">Brazil is our smooth talker. It starts with mild Brazilian arabicas from the arid Savannahs of the Cerrado region. They give this origin coffee its characteristic toasted sweet cereal note.</p>
+            </div>
+            <div class="intro-img">
+                <a href="#" class="capsule" id="fetch-json">
+                    <img src="https://www.nespresso.com/shared_res/agility/b2b/b2b/pureOrigins/img/capsules/brazil_S.png"/>
+                </a>
             </div>
         </div>
-
-        <div class="waves">
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
+        <div class="coffee-specs">
+            <div class="specs-header">
+                <div>
+                    <h3>COFFEE <strong>SPECS</strong></h3>
+                </div>
+                <div>
+                    <ul class="specs-list">
+                        <li><strong>Sweet cereal</strong></li>
+                        <li><strong>Espresso</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="fetched-data"></div>
         </div>
-    </body>
+        <div class="overlay"></div>
+    </div>
+</div>
+<div class="waves">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+</div>
+<script src="index.js"></script>
+</body>
 </html>

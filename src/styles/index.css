@@ -1,11 +1,10 @@
 body {
   background-color: #121526;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
   margin: 0;
   padding: 0;
 }
-
 
 .main-wrapper {
   width: 100%;
@@ -22,7 +21,7 @@ body {
 
 .intro-image-container {
   display: flex;
-  gap:30px;
+  gap: 30px;
 }
 
 .intro-img {
@@ -63,21 +62,17 @@ ul.specs-list {
 .coffee-specs h3 {
   font-weight: normal;
   letter-spacing: 2px;
-
-
   font-size: 34px;
 }
 
 .coffee-specs ul {
   list-style-type: none;
   letter-spacing: 3px;
-
 }
 
 #fetched-data div {
   margin-bottom: 5px;
   letter-spacing: 2px;
-
 }
 
 .waves .wave {
@@ -91,29 +86,27 @@ ul.specs-list {
 
 @keyframes moveWave {
   0% {
-      background-position-x: 0;
+    background-position-x: 0;
   }
   100% {
-      background-position-x: 1000px;
+    background-position-x: 1000px;
   }
 }
-
 @media (max-width: 768px) {
   .intro-image-container {
-      display: flex;
-      gap: 10px;
-      flex-direction: column;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
   }
-
   .intro-img {
-      text-align: center;
+    text-align: center;
   }
-  
   .waves {
-      margin-top: 50px;
+    margin-top: 50px;
   }
-  
   .waves .wave {
-      position: relative;
+    position: relative;
   }
 }
+
+/*# sourceMappingURL=index.css.map */
