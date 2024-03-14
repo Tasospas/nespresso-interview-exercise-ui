@@ -144,8 +144,18 @@ ul.specs-list {
     text-align: center;
   }
   .intro-text h2 {
-    text-align: left;
-    padding-left: 100px;
+    text-align: center;
+    padding-left: left;
+  }
+  .coffee-specs .specs-list {
+    display: none;
+  }
+  .specs-header {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+  .specs-header h3 {
+    white-space: nowrap;
   }
 }
 
