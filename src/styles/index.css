@@ -42,6 +42,11 @@ p.desc-text {
   justify-content: space-between;
 }
 
+.specs-header h3 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
 ul.specs-list {
   padding: 0 !important;
   display: flex;
@@ -63,6 +68,14 @@ ul.specs-list {
   font-weight: normal;
   letter-spacing: 2px;
   font-size: 34px;
+}
+
+.intro-text h2 {
+  font-weight: normal;
+}
+
+.intro-text p {
+  font-weight: bold;
 }
 
 .coffee-specs ul {
@@ -106,6 +119,33 @@ ul.specs-list {
   }
   .waves .wave {
     position: relative;
+  }
+}
+@media (max-width: 452px) {
+  .desc-text {
+    display: none;
+  }
+  .intro-img {
+    background: none;
+  }
+  .coffee-specs {
+    background-color: rgba(11, 13, 24, 0.5);
+    position: relative;
+    z-index: 2;
+  }
+  .waves {
+    position: relative;
+    z-index: 1;
+  }
+  .waves .wave {
+    position: absolute;
+  }
+  .intro-text, .intro-text p {
+    text-align: center;
+  }
+  .intro-text h2 {
+    text-align: left;
+    padding-left: 100px;
   }
 }
 
